@@ -1,0 +1,10 @@
+C:\skola\8.semester\TP\Generator\PseudoSentence\PseudoSentence\obj\Debug\PassphraseGen.csprojResolveAssemblyReference.cache
+C:\skola\8.semester\TP\Generator\PseudoSentence\PseudoSentence\bin\Debug\PassphraseGen.dll
+C:\skola\8.semester\TP\Generator\PseudoSentence\PseudoSentence\bin\Debug\PassphraseGen.pdb
+C:\skola\8.semester\TP\Generator\PseudoSentence\PseudoSentence\obj\Debug\PassphraseGen.dll
+C:\skola\8.semester\TP\Generator\PseudoSentence\PseudoSentence\obj\Debug\PassphraseGen.pdb
+C:\skola\8.semester\TP\Generator\PseudoSentence\PassphraseGen\bin\Debug\PassphraseGen.dll
+C:\skola\8.semester\TP\Generator\PseudoSentence\PassphraseGen\bin\Debug\PassphraseGen.pdb
+C:\skola\8.semester\TP\Generator\PseudoSentence\PassphraseGen\obj\Debug\PassphraseGen.csprojResolveAssemblyReference.cache
+C:\skola\8.semester\TP\Generator\PseudoSentence\PassphraseGen\obj\Debug\PassphraseGen.dll
+C:\skola\8.semester\TP\Generator\PseudoSentence\PassphraseGen\obj\Debug\PassphraseGen.pdb
