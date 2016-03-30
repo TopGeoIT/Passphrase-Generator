@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 namespace PassphraseGen
 {
-    public class Dictionary
+    public class DictionaryController
     {
         public Element nouns;
         public Element adjectives;
@@ -26,7 +26,7 @@ namespace PassphraseGen
             }
         }
 
-        public Dictionary(string route)
+        public DictionaryController(string route)
         {
             loadDictionaries(route);
         }

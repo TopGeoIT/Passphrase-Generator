@@ -8,17 +8,15 @@ using System.Xml.Linq;
 
 namespace PassphraseGen
 {
-    public class Builder
+    public class WordsController
     {
-
-
         private Noun[] nouns;
         private Verb[] verbs;
         private Adjective[] adjectives;
         private Adverb[] adverbs;
         private Conjunction[] conjunctions;
 
-        public Builder(string route)
+        public WordsController(string route)
         {
             loadDictionaries(route);
         }
@@ -58,6 +56,35 @@ namespace PassphraseGen
                     throw new ArgumentException("Bad type");
             }
         }
+
+        public int getIndex(string type, string word)
+        {
+            switch (type)
+            {
+                case "nouns":
+                    var indexNoun = Array.FindIndex(this.nouns, row => (row.singular != null && row.singular == word) || (row.plural != null && row.plural == word) || (row.value != null && row.value == word));
+                    return indexNoun;
+                    break;
+                case "verbs":
+                    var indexVerb = Array.FindIndex(this.verbs, row => (row.presentPlural != null && row.presentPlural == word) || (row.presentSingular != null && row.presentSingular == word));
+                    return indexVerb;
+                    break;
+                case "adjectives":
+                    var indexAdj = Array.FindIndex(this.adjectives, row => (row.value != null && row.value == word));
+                    return indexAdj;
+                    break;
+                case "adverbs":
+                    var indexAdv = Array.FindIndex(this.adverbs, row => (row.value != null && row.value == word));
+                    return indexAdv;
+                    break;
+                case "conjunctions":
+                    return 0;
+                    break;
+                default:
+                    throw new ArgumentException("Bad type");
+            }
+        }
+
         public void loadDictionaries(string route)
         {
             loadNouns(route);

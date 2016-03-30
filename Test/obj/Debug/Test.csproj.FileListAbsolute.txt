@@ -17,3 +17,11 @@ C:\skola\8.semester\TP\Generator\PseudoSentence\Test\bin\Debug\Test.pdb
 C:\skola\8.semester\TP\Generator\PseudoSentence\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
 C:\skola\8.semester\TP\Generator\PseudoSentence\Test\bin\Debug\PassphraseGen.dll
 C:\skola\8.semester\TP\Generator\PseudoSentence\Test\bin\Debug\PassphraseGen.pdb
+D:\Peter\skola\FEI\8.semester\TP\Generator\PseudoSentence\Test\bin\Debug\Test.exe.config
+D:\Peter\skola\FEI\8.semester\TP\Generator\PseudoSentence\Test\obj\Debug\Test.exe
+D:\Peter\skola\FEI\8.semester\TP\Generator\PseudoSentence\Test\obj\Debug\Test.pdb
+D:\Peter\skola\FEI\8.semester\TP\Generator\PseudoSentence\Test\bin\Debug\Test.exe
+D:\Peter\skola\FEI\8.semester\TP\Generator\PseudoSentence\Test\bin\Debug\Test.pdb
+D:\Peter\skola\FEI\8.semester\TP\Generator\PseudoSentence\Test\bin\Debug\PassphraseGen.dll
+D:\Peter\skola\FEI\8.semester\TP\Generator\PseudoSentence\Test\bin\Debug\PassphraseGen.pdb
+D:\Peter\skola\FEI\8.semester\TP\Generator\PseudoSentence\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
