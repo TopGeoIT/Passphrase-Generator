@@ -1,0 +1,5 @@
+D:\Peter\skola\FEI\8.semester\TP\Generator\PseudoSentence\PassphraseGen\bin\Release\PassphraseGen.dll
+D:\Peter\skola\FEI\8.semester\TP\Generator\PseudoSentence\PassphraseGen\bin\Release\PassphraseGen.pdb
+D:\Peter\skola\FEI\8.semester\TP\Generator\PseudoSentence\PassphraseGen\obj\Release\PassphraseGen.csprojResolveAssemblyReference.cache
+D:\Peter\skola\FEI\8.semester\TP\Generator\PseudoSentence\PassphraseGen\obj\Release\PassphraseGen.dll
+D:\Peter\skola\FEI\8.semester\TP\Generator\PseudoSentence\PassphraseGen\obj\Release\PassphraseGen.pdb
