@@ -34,7 +34,7 @@ namespace passphrase
 
                 File sdcard = Android.OS.Environment.DataDirectory;
 
-                PassphraseController passphrasegen = new PassphraseController("");
+                //PassphraseController passphrasegen = new PassphraseController("");
                 //TODO Call DLL
 
                 sentenceView.Text = string.Format (entropy.ToString());
