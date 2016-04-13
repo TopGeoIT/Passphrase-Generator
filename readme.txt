@@ -1,0 +1,1 @@
+remove .sample from solution files
