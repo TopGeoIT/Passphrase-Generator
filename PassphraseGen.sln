@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassphraseGen", "PassphraseGen\PassphraseGen.csproj", "{D4A6BD1D-C129-41D0-80B7-C9A3F20F9636}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{1D32AE8B-316A-4BC9-AE48-7477760D0FF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{937D1037-B07C-4E10-9C2A-78455736491E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidApp", "passphrase\AndroidApp.csproj", "{943498DA-066F-4189-AD84-5112A2DFCE02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4A6BD1D-C129-41D0-80B7-C9A3F20F9636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A6BD1D-C129-41D0-80B7-C9A3F20F9636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A6BD1D-C129-41D0-80B7-C9A3F20F9636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A6BD1D-C129-41D0-80B7-C9A3F20F9636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D32AE8B-316A-4BC9-AE48-7477760D0FF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D32AE8B-316A-4BC9-AE48-7477760D0FF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D32AE8B-316A-4BC9-AE48-7477760D0FF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D32AE8B-316A-4BC9-AE48-7477760D0FF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{937D1037-B07C-4E10-9C2A-78455736491E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{937D1037-B07C-4E10-9C2A-78455736491E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{937D1037-B07C-4E10-9C2A-78455736491E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{937D1037-B07C-4E10-9C2A-78455736491E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{943498DA-066F-4189-AD84-5112A2DFCE02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{943498DA-066F-4189-AD84-5112A2DFCE02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{943498DA-066F-4189-AD84-5112A2DFCE02}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{943498DA-066F-4189-AD84-5112A2DFCE02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{943498DA-066F-4189-AD84-5112A2DFCE02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{943498DA-066F-4189-AD84-5112A2DFCE02}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

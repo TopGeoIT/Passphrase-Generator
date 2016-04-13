@@ -1,6 +1,4 @@
-PassphraseGen.sdf
-PassphraseGen.sln
 DesignTimeResolveAssemblyReferencesInput.cache
 Test.csproj.FileListAbsolute.txt
-.vs/PassphraseGen/v14/.suo
+.vs/*
 .suo
