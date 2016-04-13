@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="buttonGenerateOnEntropy">Generovať</string>
+	<string name="app_name">Passphrase</string>
+	<string name="welcomeText">Víta Vás Passphrase generátor</string>
+	<string name="mainInfo">Zvoľte si funkciu v menu</string>
+	<string name="passwordTranslateOption">Zvoľ možnosť</string>
+	<string name="translate">Prelož</string>
+</resources>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="exit">Ukončiť aplikáciu</string>
+	<string name="genFromEntropy">Generovanie z entropie</string>
+	<string name="translator">Prekladač hesla</string>
+</resources>

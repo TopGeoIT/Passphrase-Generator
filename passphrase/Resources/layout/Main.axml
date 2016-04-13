@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="94.5dp"
+        android:id="@+id/textView1"
+        android:text="@string/welcomeText"
+        android:gravity="center" />
+    <TextView
+        android:text="@string/mainInfo"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="130.5dp"
+        android:id="@+id/infoTextView"
+        android:gravity="center" />
+</LinearLayout>

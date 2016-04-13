@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/generateFromEntropy"
+          android:title="@string/genFromEntropy"/>
+    <item android:id="@+id/translator"
+    	  android:title="@string/translator" />
+    <item android:id="@+id/closeApp"
+          android:title="@string/exit"/>
+</menu>
