@@ -2,3 +2,10 @@ DesignTimeResolveAssemblyReferencesInput.cache
 Test.csproj.FileListAbsolute.txt
 .vs/*
 .suo
+PassphraseGen/bin/*
+PassphraseGen/obj/*
+Test/bin/*
+Test/obj/*
+passphrase/bin/*
+passphrase/obj/*
+packages/*

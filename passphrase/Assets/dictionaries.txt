@@ -1,0 +1,5 @@
+﻿Adjectives.xml
+Adverbs.xml
+Conjunctions.xml
+Nouns.xml
+Verbs.xml

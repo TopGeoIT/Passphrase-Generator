@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="Xamarin.Android.Support.v13">
       <HintPath>..\packages\Xamarin.Android.Support.v13.20.0.0.4\lib\MonoAndroid32\Xamarin.Android.Support.v13.dll</HintPath>
     </Reference>
@@ -55,16 +56,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DictionaryLoader.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="PGClasses\Classes\Adjective.cs" />
+    <Compile Include="PGClasses\Classes\Adverb.cs" />
+    <Compile Include="PGClasses\Classes\BuildObj.cs" />
+    <Compile Include="PGClasses\Classes\Conjunction.cs" />
+    <Compile Include="PGClasses\Classes\Noun.cs" />
+    <Compile Include="PGClasses\Classes\PseudoSentence.cs" />
+    <Compile Include="PGClasses\Classes\PseudoSentenceElement.cs" />
+    <Compile Include="PGClasses\Classes\SentenceMember.cs" />
+    <Compile Include="PGClasses\Classes\Verb.cs" />
+    <Compile Include="PGClasses\DictionaryController.cs" />
+    <Compile Include="PGClasses\PassphraseController.cs" />
+    <Compile Include="PGClasses\PseudoSentenceController.cs" />
+    <Compile Include="PGClasses\WordsController.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GenerateEntropyActivity.cs" />
-    <Compile Include="TranslateActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
-    <None Include="Assets\AboutAssets.txt" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -84,11 +96,37 @@
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PassphraseGen\PassphraseGen.csproj">
-      <Project>{d4a6bd1d-c129-41d0-80b7-c9a3f20f9636}</Project>
-      <Name>PassphraseGen</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\dictionaries\Adjectives.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\dictionaries\Adverbs.xml" />
+    <EmbeddedResource Include="Resources\dictionaries\Conjunctions.xml" />
+    <EmbeddedResource Include="Resources\dictionaries\Nouns.xml" />
+    <EmbeddedResource Include="Resources\dictionaries\Verbs.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Adjectives.xml">
+      <SubType>Designer</SubType>
+    </AndroidAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Adverbs.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Conjunctions.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Nouns.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Verbs.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\DictNames.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\dictionaries.txt" />
+  </ItemGroup>
 </Project>

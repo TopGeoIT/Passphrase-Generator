@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <string-array name="dictionaries">
+    <item>Adjectives.xml</item>
+    <item>Adverbs.xml</item>
+    <item>Conjunctions.xml</item>
+    <item>Nouns.xml</item>
+    <item>Verbs.xml</item>
+  </string-array>
+</resources>
