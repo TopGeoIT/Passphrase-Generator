@@ -63,10 +63,7 @@ namespace passphrase
 		{
 			
 			// aapt resource value: 0x7f0d0000
-			public const int dictionaries = 2131558400;
-			
-			// aapt resource value: 0x7f0d0001
-			public const int passwordTranslateOptions = 2131558401;
+			public const int passwordTranslateOptions = 2131558400;
 			
 			static Array()
 			{
@@ -1257,6 +1254,9 @@ namespace passphrase
 			
 			// aapt resource value: 0x7f0b000e
 			public const int genFromEntropy = 2131427342;
+			
+			// aapt resource value: 0x7f0b0016
+			public const int loadingError = 2131427350;
 			
 			// aapt resource value: 0x7f0b0013
 			public const int mainInfo = 2131427347;

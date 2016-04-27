@@ -98,15 +98,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ItemGroup>
-    <EmbeddedResource Include="Resources\dictionaries\Adjectives.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\dictionaries\Adverbs.xml" />
-    <EmbeddedResource Include="Resources\dictionaries\Conjunctions.xml" />
-    <EmbeddedResource Include="Resources\dictionaries\Nouns.xml" />
-    <EmbeddedResource Include="Resources\dictionaries\Verbs.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidAsset Include="Assets\Adjectives.xml">
       <SubType>Designer</SubType>
     </AndroidAsset>
@@ -122,9 +113,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\Verbs.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\values\DictNames.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\dictionaries.txt" />

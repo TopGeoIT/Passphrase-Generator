@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<conjunctions size="4" language="en-au" name="Conjunctions Dictionary">
-  <conjunction value="and" separates="nounsandphrases"/>
-  <conjunction value="also" separates="nounsandphrases"/>
-  <conjunction value="or" separates="nounsandphrases"/>
-  <conjunction value="but" separates="nounsandphrases"/>
-</conjunctions>

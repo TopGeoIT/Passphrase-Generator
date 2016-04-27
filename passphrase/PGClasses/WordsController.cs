@@ -1,6 +1,7 @@
 ﻿using PassphraseGen.Classes;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,11 @@ namespace PassphraseGen
         public WordsController(string route)
         {
             loadDictionaries(route);
+        }
+
+        public WordsController(Dictionary<string, string> dictionaries)
+        {
+            loadDictionaries(dictionaries);
         }
 
         public BuildObj returner(string value, string sing, string plur, string spec)
@@ -94,6 +100,15 @@ namespace PassphraseGen
             loadConjunctions(route);
         }
 
+        public void loadDictionaries(Dictionary<string, string> dictionaries)
+        {
+            loadNounsFromString(dictionaries["nouns"]);
+            loadVerbsFromSring(dictionaries["verbs"]);
+            loadAdjectivesFromSring(dictionaries["adjectives"]);
+            loadAdverbsFromSring(dictionaries["adverbs"]);
+            loadConjunctions();
+        }
+
         private void loadConjunctions(string route)
         {
             List<Conjunction> conjunctionsTmp = new List<Conjunction>();
@@ -101,10 +116,43 @@ namespace PassphraseGen
             conjunctionsTmp.Add(new Conjunction(",", ","));
             this.conjunctions = conjunctionsTmp.ToArray();
         }
+        private void loadConjunctions()
+        {
+            List<Conjunction> conjunctionsTmp = new List<Conjunction>();
+            conjunctionsTmp.Add(new Conjunction("and", "and"));
+            conjunctionsTmp.Add(new Conjunction(",", ","));
+            this.conjunctions = conjunctionsTmp.ToArray();
+        }
+
         private void loadNouns(string route)
         {
             List<Noun> nounsTmp = new List<Noun>();
             XElement nounsFromFile = XElement.Load(route + "Nouns.xml");
+            XElement[] nouns = nounsFromFile.Elements().ToArray();
+            for (int i = 0; i < nouns.Length; i++)
+            {
+                string value = null, sing = null, plur = null;
+                if (nouns[i].Attribute("value") != null)
+                {
+                    value = nouns[i].Attribute("value").Value;
+                }
+                if (nouns[i].Attribute("singular") != null)
+                {
+                    sing = nouns[i].Attribute("singular").Value;
+                }
+                if (nouns[i].Attribute("plural") != null)
+                {
+                    plur = nouns[i].Attribute("plural").Value;
+                }
+                nounsTmp.Add(new Noun(value, sing, plur));
+            }
+            this.nouns = nounsTmp.ToArray();
+
+        }
+        private void loadNounsFromString(string sr)
+        {
+            List<Noun> nounsTmp = new List<Noun>();
+            XElement nounsFromFile = XElement.Parse(sr);
             XElement[] nouns = nounsFromFile.Elements().ToArray();
             for (int i = 0; i < nouns.Length; i++)
             {
@@ -146,8 +194,28 @@ namespace PassphraseGen
                 verbsTmp.Add(new Verb(sing, plur));
             }
             this.verbs = verbsTmp.ToArray();
-
         }
+        private void loadVerbsFromSring(string sr)
+        {
+            List<Verb> verbsTmp = new List<Verb>();
+            XElement verbsFromFile = XElement.Parse(sr);
+            XElement[] verbs = verbsFromFile.Elements().ToArray();
+            for (int i = 0; i < verbs.Length; i++)
+            {
+                string sing = null, plur = null;
+                if (verbs[i].Attribute("presentSingular") != null)
+                {
+                    sing = verbs[i].Attribute("presentSingular").Value;
+                }
+                if (verbs[i].Attribute("presentPlural") != null)
+                {
+                    plur = verbs[i].Attribute("presentPlural").Value;
+                }
+                verbsTmp.Add(new Verb(sing, plur));
+            }
+            this.verbs = verbsTmp.ToArray();
+        }
+
         private void loadAdjectives(string route)
         {
             List<Adjective> adjectivesTmp = new List<Adjective>();
@@ -163,8 +231,24 @@ namespace PassphraseGen
                 adjectivesTmp.Add(new Adjective(value));
             }
             this.adjectives = adjectivesTmp.ToArray();
-
         }
+        private void loadAdjectivesFromSring(string sr)
+        {
+            List<Adjective> adjectivesTmp = new List<Adjective>();
+            XElement adjectivesFromFile = XElement.Parse(sr);
+            XElement[] adjectives = adjectivesFromFile.Elements().ToArray();
+            for (int i = 0; i < adjectives.Length; i++)
+            {
+                string value = null;
+                if (adjectives[i].Attribute("value") != null)
+                {
+                    value = adjectives[i].Attribute("value").Value;
+                }
+                adjectivesTmp.Add(new Adjective(value));
+            }
+            this.adjectives = adjectivesTmp.ToArray();
+        }
+
         private void loadAdverbs(string route)
         {
             List<Adverb> adverbsTmp = new List<Adverb>();
@@ -180,7 +264,22 @@ namespace PassphraseGen
                 adverbsTmp.Add(new Adverb(value));
             }
             this.adverbs = adverbsTmp.ToArray();
-
+        }
+        private void loadAdverbsFromSring(string sr)
+        {
+            List<Adverb> adverbsTmp = new List<Adverb>();
+            XElement adverbsFromFile = XElement.Parse(sr);
+            XElement[] adverbs = adverbsFromFile.Elements().ToArray();
+            for (int i = 0; i < adverbs.Length; i++)
+            {
+                string value = null;
+                if (adverbs[i].Attribute("value") != null)
+                {
+                    value = adverbs[i].Attribute("value").Value;
+                }
+                adverbsTmp.Add(new Adverb(value));
+            }
+            this.adverbs = adverbsTmp.ToArray();
         }
     }
 }

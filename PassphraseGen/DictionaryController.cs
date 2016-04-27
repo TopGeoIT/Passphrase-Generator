@@ -31,7 +31,7 @@ namespace PassphraseGen
             loadDictionaries(route);
         }
 
-        public DictionaryController(Dictionary<string, StreamReader> dictionaries)
+        public DictionaryController(Dictionary<string, string> dictionaries)
         {
             loadDictionaries(dictionaries);
         }
@@ -79,22 +79,22 @@ namespace PassphraseGen
             this.conjunctions = new Element(0, 0);
         }
 
-        public void loadDictionaries(Dictionary<string, StreamReader> dictionaries)
+        public void loadDictionaries(Dictionary<string, string> dictionaries)
         {
-            XElement nounsFromFile = XElement.Load(dictionaries["nouns"]);
+            XElement nounsFromFile = XElement.Parse(dictionaries["nouns"]);
             var nounsSize = Convert.ToInt32(nounsFromFile.FirstAttribute.Value);
 
             this.nouns = new Element(nounsSize, getEntrophy(nounsSize));
 
-            XElement adjectivesFromFile = XElement.Load(dictionaries["adjectives"]);
+            XElement adjectivesFromFile = XElement.Parse(dictionaries["adjectives"]);
             var adjectivesSize = Convert.ToInt32(adjectivesFromFile.FirstAttribute.Value);
             this.adjectives = new Element(adjectivesSize, getEntrophy(adjectivesSize));
 
-            XElement verbsFromFile = XElement.Load(dictionaries["verbs"]);
+            XElement verbsFromFile = XElement.Parse(dictionaries["verbs"]);
             var verbsSize = Convert.ToInt32(verbsFromFile.FirstAttribute.Value);
             this.verbs = new Element(verbsSize, getEntrophy(verbsSize));
 
-            XElement adverbsFromFile = XElement.Load(dictionaries["adverbs"]);
+            XElement adverbsFromFile = XElement.Parse(dictionaries["adverbs"]);
             var adverbsSize = Convert.ToInt32(adverbsFromFile.FirstAttribute.Value);
             this.adverbs = new Element(adverbsSize, getEntrophy(adverbsSize));
 

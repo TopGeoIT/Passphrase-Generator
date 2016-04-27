@@ -22,7 +22,7 @@ namespace PassphraseGen
             loadDictionaries(route);
         }
 
-        public WordsController(Dictionary<string, StreamReader> dictionaries)
+        public WordsController(Dictionary<string, string> dictionaries)
         {
             loadDictionaries(dictionaries);
         }
@@ -100,12 +100,12 @@ namespace PassphraseGen
             loadConjunctions(route);
         }
 
-        public void loadDictionaries(Dictionary<string, StreamReader> dictionaries)
+        public void loadDictionaries(Dictionary<string, string> dictionaries)
         {
-            loadNouns(dictionaries["nouns"]);
-            loadVerbs(dictionaries["verbs"]);
-            loadAdjectives(dictionaries["adjectives"]);
-            loadAdverbs(dictionaries["adverbs"]);
+            loadNounsFromString(dictionaries["nouns"]);
+            loadVerbsFromSring(dictionaries["verbs"]);
+            loadAdjectivesFromSring(dictionaries["adjectives"]);
+            loadAdverbsFromSring(dictionaries["adverbs"]);
             loadConjunctions();
         }
 
@@ -149,10 +149,10 @@ namespace PassphraseGen
             this.nouns = nounsTmp.ToArray();
 
         }
-        private void loadNouns(StreamReader sr)
+        private void loadNounsFromString(string sr)
         {
             List<Noun> nounsTmp = new List<Noun>();
-            XElement nounsFromFile = XElement.Load(sr);
+            XElement nounsFromFile = XElement.Parse(sr);
             XElement[] nouns = nounsFromFile.Elements().ToArray();
             for (int i = 0; i < nouns.Length; i++)
             {
@@ -195,10 +195,10 @@ namespace PassphraseGen
             }
             this.verbs = verbsTmp.ToArray();
         }
-        private void loadVerbs(StreamReader sr)
+        private void loadVerbsFromSring(string sr)
         {
             List<Verb> verbsTmp = new List<Verb>();
-            XElement verbsFromFile = XElement.Load(sr);
+            XElement verbsFromFile = XElement.Parse(sr);
             XElement[] verbs = verbsFromFile.Elements().ToArray();
             for (int i = 0; i < verbs.Length; i++)
             {
@@ -232,10 +232,10 @@ namespace PassphraseGen
             }
             this.adjectives = adjectivesTmp.ToArray();
         }
-        private void loadAdjectives(StreamReader sr)
+        private void loadAdjectivesFromSring(string sr)
         {
             List<Adjective> adjectivesTmp = new List<Adjective>();
-            XElement adjectivesFromFile = XElement.Load(sr);
+            XElement adjectivesFromFile = XElement.Parse(sr);
             XElement[] adjectives = adjectivesFromFile.Elements().ToArray();
             for (int i = 0; i < adjectives.Length; i++)
             {
@@ -265,10 +265,10 @@ namespace PassphraseGen
             }
             this.adverbs = adverbsTmp.ToArray();
         }
-        private void loadAdverbs(StreamReader sr)
+        private void loadAdverbsFromSring(string sr)
         {
             List<Adverb> adverbsTmp = new List<Adverb>();
-            XElement adverbsFromFile = XElement.Load(sr);
+            XElement adverbsFromFile = XElement.Parse(sr);
             XElement[] adverbs = adverbsFromFile.Elements().ToArray();
             for (int i = 0; i < adverbs.Length; i++)
             {

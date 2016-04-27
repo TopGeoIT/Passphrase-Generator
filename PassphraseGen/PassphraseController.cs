@@ -24,7 +24,7 @@ namespace PassphraseGen
             this.rnd = new Random();
         }
 
-        public PassphraseController(Dictionary<string, StreamReader> dictionaries)
+        public PassphraseController(Dictionary<string, string> dictionaries)
         {
             this.dictionary = new DictionaryController(dictionaries);
             this.generator = new PseudoSentenceController(this.dictionary);

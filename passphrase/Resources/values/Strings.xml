@@ -5,5 +5,6 @@
 	<string name="welcomeText">Víta Vás Passphrase generátor</string>
 	<string name="mainInfo">Zvoľte si funkciu v menu</string>
 	<string name="passwordTranslateOption">Zvoľ možnosť</string>
-	<string name="translate">Prelož</string>
+  <string name="translate">Prelož</string>
+  <string name="loadingError">Pri načítaní slovníkov vznikla chyba</string>
 </resources>

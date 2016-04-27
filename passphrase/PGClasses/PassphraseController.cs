@@ -1,6 +1,7 @@
 ﻿using PassphraseGen.Classes;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,9 +23,14 @@ namespace PassphraseGen
 
             this.rnd = new Random();
         }
-        public PassphraseController()
-        {
 
+        public PassphraseController(Dictionary<string, string> dictionaries)
+        {
+            this.dictionary = new DictionaryController(dictionaries);
+            this.generator = new PseudoSentenceController(this.dictionary);
+            this.sentenceBuilder = new WordsController(dictionaries);
+
+            this.rnd = new Random();
         }
         public string[] generateSentenceFromEntrophy(int entrophy)//"c:/skola/8.semester/TP/Generator/Dictionaries/"
         {
