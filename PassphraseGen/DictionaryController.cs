@@ -31,6 +31,11 @@ namespace PassphraseGen
             loadDictionaries(route);
         }
 
+        public DictionaryController(Dictionary<string, StreamReader> dictionaries)
+        {
+            loadDictionaries(dictionaries);
+        }
+
         public int getSizeBits(string type)
         {
             switch (type)
@@ -69,6 +74,31 @@ namespace PassphraseGen
             this.adverbs = new Element(adverbsSize, getEntrophy(adverbsSize));
 
             /*XElement conjunctionsFromFile = XElement.Load(route + "Conjunctions.xml");
+            var conjunctionsSize = Convert.ToInt32(conjunctionsFromFile.FirstAttribute.Value);
+            this.conjunctions = new Element(conjunctionsSize, getEntrophy(conjunctionsSize));*/
+            this.conjunctions = new Element(0, 0);
+        }
+
+        public void loadDictionaries(Dictionary<string, StreamReader> dictionaries)
+        {
+            XElement nounsFromFile = XElement.Load(dictionaries["nouns"]);
+            var nounsSize = Convert.ToInt32(nounsFromFile.FirstAttribute.Value);
+
+            this.nouns = new Element(nounsSize, getEntrophy(nounsSize));
+
+            XElement adjectivesFromFile = XElement.Load(dictionaries["adjectives"]);
+            var adjectivesSize = Convert.ToInt32(adjectivesFromFile.FirstAttribute.Value);
+            this.adjectives = new Element(adjectivesSize, getEntrophy(adjectivesSize));
+
+            XElement verbsFromFile = XElement.Load(dictionaries["verbs"]);
+            var verbsSize = Convert.ToInt32(verbsFromFile.FirstAttribute.Value);
+            this.verbs = new Element(verbsSize, getEntrophy(verbsSize));
+
+            XElement adverbsFromFile = XElement.Load(dictionaries["adverbs"]);
+            var adverbsSize = Convert.ToInt32(adverbsFromFile.FirstAttribute.Value);
+            this.adverbs = new Element(adverbsSize, getEntrophy(adverbsSize));
+
+            /*XElement conjunctionsFromFile = XElement.Load(dictionaries["conjunctions"]);
             var conjunctionsSize = Convert.ToInt32(conjunctionsFromFile.FirstAttribute.Value);
             this.conjunctions = new Element(conjunctionsSize, getEntrophy(conjunctionsSize));*/
             this.conjunctions = new Element(0, 0);

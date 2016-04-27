@@ -1,6 +1,7 @@
 ﻿using PassphraseGen.Classes;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,15 @@ namespace PassphraseGen
         private Random rnd;
 
         public PassphraseController(string dictionaries)
+        {
+            this.dictionary = new DictionaryController(dictionaries);
+            this.generator = new PseudoSentenceController(this.dictionary);
+            this.sentenceBuilder = new WordsController(dictionaries);
+
+            this.rnd = new Random();
+        }
+
+        public PassphraseController(Dictionary<string, StreamReader> dictionaries)
         {
             this.dictionary = new DictionaryController(dictionaries);
             this.generator = new PseudoSentenceController(this.dictionary);
