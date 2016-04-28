@@ -10,11 +10,13 @@ namespace PassphraseGen.Classes
     {
         public string value;
         public string type;
+        public string multisentence;
 
-        public Conjunction(string value, string type)
+        public Conjunction(string value, string type, string multisentence)
         {
             this.value = value;
             this.type = type;
+            this.multisentence = multisentence;
         }
     }
 }

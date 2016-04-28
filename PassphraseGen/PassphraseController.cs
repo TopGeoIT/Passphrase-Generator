@@ -94,9 +94,11 @@ namespace PassphraseGen
                     {
                         binaryQuery += rnd.Next(0, 2).ToString();
                     }
-                    binaryQuerryLength = binaryQuery.Length;
 
                     int count = sentence.bits - binaryQuerryLength - 4;
+
+                    binaryQuerryLength = binaryQuery.Length;
+
                     string binary = Convert.ToString(count, 2);
 
                     string formatedBinary = binary.ToString();
@@ -148,7 +150,8 @@ namespace PassphraseGen
 
 
             //TODO> rozparsovat vetu na slova, zistit pocet slov, vygenerovat pseudovetu s tolko slovami, rozparsovat na slovne druhy, zistit index v slovnikoch, vratit binaryString
-            PseudoSentence sentence = this.generator.generate(null, sentenceList.Count(), false);
+            bool sentences = sentenceList.Contains("but") || sentenceList.Contains("But");
+            PseudoSentence sentence = this.generator.generate(null, sentenceList.Count(), sentences);
 
             if(sentence.sentence.Length != sentenceList.Count())
             {

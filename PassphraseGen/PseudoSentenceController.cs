@@ -45,7 +45,7 @@ namespace PassphraseGen
                 SentenceMember tmp = this.root;
                 root = new SentenceMember("multiSentence", "singular", true, 
                     tmp,
-                    new SentenceMember("conjunctions", "singular", false, null, null, null), 
+                    new SentenceMember("conjunctions", "multisentence", false, null, null, null), 
                     new SentenceMember("sentence", "singular", true, 
                         new SentenceMember("nouns", "singular", false, null, null, null),
                         new SentenceMember("verbs", "singular", false, null, null, null),

@@ -27,7 +27,7 @@ namespace PassphraseGen
             loadDictionaries(dictionaries);
         }
 
-        public BuildObj returner(string value, string sing, string plur, string spec)
+        public BuildObj returner(string value, string sing, string plur, string multisentence, string spec)
         {
             if (sing == null && plur == null && value != null)
                 return new BuildObj(value, "");
@@ -39,24 +39,34 @@ namespace PassphraseGen
                 throw new KeyNotFoundException("No word for specified index");
         }
 
+        public BuildObj returnerConjunction(string value, string multisentence, string spec)
+        {
+            if (spec == "singular" && value != null)
+                return new BuildObj(value, "sg");
+            else if (spec == "multisentence" && multisentence != null)
+                return new BuildObj(multisentence, "ms");
+            else
+                throw new KeyNotFoundException("No word for specified index");
+        }
+
         public BuildObj buildWord(string type, string spec, int index)
         {
             switch (type)
             {
                 case "nouns":
-                    return returner(this.nouns[index].value, this.nouns[index].singular, this.nouns[index].plural, spec);
+                    return returner(this.nouns[index].value, this.nouns[index].singular, this.nouns[index].plural, null, spec);
                     break;
                 case "verbs":
-                    return returner(null, this.verbs[index].presentSingular, this.verbs[index].presentPlural, spec);
+                    return returner(null, this.verbs[index].presentSingular, this.verbs[index].presentPlural,null, spec);
                     break;
                 case "adjectives":
-                    return returner(this.adjectives[index].value, null, null, spec);
+                    return returner(this.adjectives[index].value, null, null, null, spec);
                     break;
                 case "adverbs":
-                    return returner(this.adverbs[index].value, null, null, spec);
+                    return returner(this.adverbs[index].value, null, null, null, spec);
                     break;
                 case "conjunctions":
-                    return returner(this.conjunctions[index].value, null, null, spec);
+                    return returnerConjunction(this.conjunctions[index].value, this.conjunctions[index].multisentence, spec);
                     break;
                 default:
                     throw new ArgumentException("Bad type");
@@ -112,15 +122,15 @@ namespace PassphraseGen
         private void loadConjunctions(string route)
         {
             List<Conjunction> conjunctionsTmp = new List<Conjunction>();
-            conjunctionsTmp.Add(new Conjunction("and", "and"));
-            conjunctionsTmp.Add(new Conjunction(",", ","));
+            conjunctionsTmp.Add(new Conjunction("and", "and", "but"));
+            conjunctionsTmp.Add(new Conjunction(",", ",", null));
             this.conjunctions = conjunctionsTmp.ToArray();
         }
         private void loadConjunctions()
         {
             List<Conjunction> conjunctionsTmp = new List<Conjunction>();
-            conjunctionsTmp.Add(new Conjunction("and", "and"));
-            conjunctionsTmp.Add(new Conjunction(",", ","));
+            conjunctionsTmp.Add(new Conjunction("and", "and", "but"));
+            conjunctionsTmp.Add(new Conjunction(",", ",", null));
             this.conjunctions = conjunctionsTmp.ToArray();
         }
 
