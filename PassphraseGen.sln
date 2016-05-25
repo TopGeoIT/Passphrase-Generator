@@ -13,9 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidApp", "passphrase\An
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinApp", "WinApp\WinApp.csproj", "{6F00419B-8A5D-48BE-AADB-8DF5AD43AE84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitViewMenu", "..\..\..\Desktop\SplitViewMenuUWP\SplitViewMenu\SplitViewMenu.csproj", "{FE57E901-BC4D-4C0B-A386-C253E0FC245C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitViewMenu", "SplitViewMenu\SplitViewMenu.csproj", "{FE57E901-BC4D-4C0B-A386-C253E0FC245C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassphraseWinPhone", "..\..\..\Documents\Visual Studio 2015\Projects\App27\App27\PassphraseWinPhone.csproj", "{AF74F030-E851-4013-9398-390F6FAD21AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassphraseWinPhone", "App27\PassphraseWinPhone.csproj", "{AF74F030-E851-4013-9398-390F6FAD21AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
