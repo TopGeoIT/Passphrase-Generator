@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="App27.Welcomme"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App27"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,132,0,0" TextWrapping="Wrap" Text="Víta vás Passphrase Generátor" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" TextAlignment="Center" Width="340"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,211,0,0" TextWrapping="Wrap" Text="Zvoľte si funkciu v menu" VerticalAlignment="Top" FontSize="18" TextAlignment="Center" Height="36" Width="340"/>
+
+    </Grid>
+</Page>

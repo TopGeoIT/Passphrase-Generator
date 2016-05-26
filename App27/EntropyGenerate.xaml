@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="App27.MainPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App27"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.725,0.471">
+        <Button x:Name="generateEntropy" Content="Generovať" HorizontalAlignment="Left" Margin="10,169,0,0" VerticalAlignment="Top" Width="340" Click="button_Click"/>
+        <TextBox x:Name="enthropyTextBox" HorizontalAlignment="Left" Margin="10,132,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" Width="340" InputScope="Number"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,57,0,0" TextWrapping="Wrap" Text="Passphrase" FontSize="20" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Top" Height="41" Width="340"/>
+        <TextBox x:Name="textBox" IsReadOnly="true"  HorizontalAlignment="Left" Margin="10,252,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="228" Width="340"/>
+
+    </Grid>
+</Page>
