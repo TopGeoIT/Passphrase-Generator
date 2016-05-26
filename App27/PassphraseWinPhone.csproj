@@ -170,6 +170,12 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SplitViewMenu\SplitViewMenu.csproj">
+      <Project>{3f4d00f7-a23c-4ec3-aaab-c6f4c82b1869}</Project>
+      <Name>SplitViewMenu</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
