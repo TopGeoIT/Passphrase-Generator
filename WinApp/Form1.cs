@@ -17,7 +17,7 @@ namespace WinApp
         public Form1()
         {
             InitializeComponent();
-            this.passphrasegen = new PassphraseController(/*"r:/TP/TP/Generator/Dictionaries/"*/ "c:/skola/8.semester/TP/Generator/Dictionaries/");
+            this.passphrasegen = new PassphraseController("../../../Dictionaries/");
         }
 
         private void button1_Click(object sender, EventArgs e)

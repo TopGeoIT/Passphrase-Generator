@@ -13,10 +13,10 @@ namespace Web.Controllers
 
         
 
-        public string Get([FromUri]int bits)
+        /*public string Get([FromUri]int bits)
         {
             try {
-                PassphraseController passphrasegen = new PassphraseController(AppDomain.CurrentDomain.BaseDirectory + "/dicts/"/*"c:/skola/8.semester/TP/Generator/Dictionaries/"*/);
+                PassphraseController passphrasegen = new PassphraseController(AppDomain.CurrentDomain.BaseDirectory + "/dicts/");
                 string[] veta = passphrasegen.generateSentenceFromEntrophy(bits);
                 string celaveta = "";
                 for (int i = 0; i < veta.Length; i++)
@@ -34,7 +34,7 @@ namespace Web.Controllers
         {
             try
             {
-                PassphraseController passphrasegen = new PassphraseController(AppDomain.CurrentDomain.BaseDirectory  + "/dicts/"/*"c:/skola/8.semester/TP/Generator/Dictionaries/"*/);
+                PassphraseController passphrasegen = new PassphraseController(AppDomain.CurrentDomain.BaseDirectory  + "/dicts/");
                 string[] veta = passphrasegen.generateSentenceFromBinary(value);
                 string celaveta = "";
                 for (int i = 0; i < veta.Length; i++)
@@ -53,7 +53,7 @@ namespace Web.Controllers
         {
             try
             {
-                PassphraseController passphrasegen = new PassphraseController(AppDomain.CurrentDomain.BaseDirectory  + "/dicts/"/*"c:/skola/8.semester/TP/Generator/Dictionaries/"*/);
+                PassphraseController passphrasegen = new PassphraseController(AppDomain.CurrentDomain.BaseDirectory  + "/dicts/");
                 string binary = passphrasegen.generateBinaryFromSentence(value);
                 return binary;
             }
@@ -61,7 +61,7 @@ namespace Web.Controllers
             {
                 return e.Message + " " + e.InnerException;
             }
-        }
+        }*/
 
     }
 }

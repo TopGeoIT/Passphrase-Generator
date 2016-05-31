@@ -7,7 +7,7 @@ app.controller('generateController', function ($scope, $http, $interval) {
 
         $http({
             method: 'GET',
-            url: $scope.apiUrl + '?bits=' + $("#enthropy_input").val(),
+            url: $scope.apiUrl + 'bits' + '?bits=' + $("#enthropy_input").val(),
             data: {
                 bits: $("#enthropy_input").val()
             }
@@ -28,7 +28,7 @@ app.controller('generateController', function ($scope, $http, $interval) {
 
         $http({
             method: 'POST',
-            url: $scope.apiUrl,
+            url: $scope.apiUrl + 'binary',
             data: "\"" + $("#bits_input").val() + "\""
             
         })
@@ -48,7 +48,7 @@ app.controller('generateController', function ($scope, $http, $interval) {
 
         $http({
             method: 'PUT',
-            url: $scope.apiUrl,
+            url: $scope.apiUrl + 'sentence',
             data: "\"" + $("#sentence_input").val() + "\""
         })
             .success(function (data, status) {
