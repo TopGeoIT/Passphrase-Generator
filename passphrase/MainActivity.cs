@@ -10,9 +10,9 @@ using System;
 
 namespace passphrase
 {
-	[Activity (Label = "passphrase", MainLauncher = true, Icon = "@mipmap/icon")]
-	public class MainActivity : Activity
-	{
+    [Activity(Label = "Passphrase", MainLauncher = true, Icon = "@drawable/PassphraseClean")]
+    public class MainActivity : Activity
+    {
         public PassphraseController controller;
         private Button executeButton;
         private TextView textOut;
@@ -21,28 +21,35 @@ namespace passphrase
         //private  dictionary;
         private int spinnerSelectedItemPosition;
 
-        protected override void OnCreate (Bundle savedInstanceState)
-		{
-			base.OnCreate (savedInstanceState);
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.Main);
 
-            DictionaryLoader dl = new DictionaryLoader();
-            Dictionary<string, string>  dictionary = dl.fillDictionary(this.Assets);
-
-            if (dictionary != null)
+            try
             {
-                SetContentView(Resource.Layout.Main);
-                controller = new PassphraseController(dictionary);
-                return;
+                DictionaryLoader dl = new DictionaryLoader();
+                Dictionary<string, string> dictionary = dl.fillDictionary(this.Assets);
+
+                if (dictionary != null)
+                {
+                    controller = new PassphraseController(dictionary);
+                    dictionary = null;
+                    return;
+                }
             }
-            TextView infoTextView = FindViewById<TextView>(Resource.Id.infoTextView);
-            infoTextView.Text = GetString(Resource.String.loadingError);
+            catch
+            {
+                TextView infoTextView = FindViewById<TextView>(Resource.Id.infoTextView);
+                infoTextView.Text = GetString(Resource.String.loadingError);
+            }
         }
 
-		public override bool OnCreateOptionsMenu(IMenu menu)
-		{
-			MenuInflater.Inflate(Resource.Menu.MainMenu, menu);
-			return true;
-		}
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.MainMenu, menu);
+            return true;
+        }
 
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
@@ -63,8 +70,14 @@ namespace passphrase
                             int entropy;
                             int.TryParse(textIn.Text, out entropy);
 
-                            textOut.Text = entropy.ToString();
-                            textOut.Text = string.Format(String.Join(" ", controller.generateSentenceFromEntrophy(entropy)));
+                            try
+                            {
+                                textOut.Text = string.Format(String.Join(" ", controller.generateSentenceFromEntrophy(entropy)));
+                            }
+                            catch
+                            {
+                                textOut.Text = GetString(Resource.String.generatingError);
+                            }
                         };
 
                         return true;
@@ -85,15 +98,23 @@ namespace passphrase
 
                         executeButton.Click += delegate
                         {
-                            if (spinnerSelectedItemPosition == 0)
+                            try
                             {
-                                textOut.Text = "Z hesla";
-                                textOut.Text = string.Format(String.Join(" ", controller.generateSentenceFromBinary(textIn.Text)));
+                                if (spinnerSelectedItemPosition == 0)
+                                {
+                                    // from password
+                                    textOut.Text = string.Format(String.Join(" ", controller.generateSentenceFromBinary(textIn.Text)));
+
+                                }
+                                else
+                                {
+                                    // from sntence
+                                    textOut.Text = controller.generateBinaryFromSentence(textIn.Text);
+                                }
                             }
-                            else
+                            catch
                             {
-                                textOut.Text = "Z vety";
-                                textOut.Text = controller.generateBinaryFromSentence(textIn.Text);
+                                textOut.Text = GetString(Resource.String.translaeError);
                             }
                         };
 

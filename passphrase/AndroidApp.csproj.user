@@ -3,5 +3,6 @@
   <PropertyGroup>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
     <ProjectView>ShowAllFiles</ProjectView>
+    <SelectedDevice>Xamarin_Android_API_15</SelectedDevice>
   </PropertyGroup>
 </Project>

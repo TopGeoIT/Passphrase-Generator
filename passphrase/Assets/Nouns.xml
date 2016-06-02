@@ -57,7 +57,6 @@
   <noun singular="carport" plural="carports"/>
   <noun singular="meat"/>
   <noun singular="wound" plural="wounds"/>
-  <noun singular="piece of jewelry" plural="jewelry"/>
   <noun singular="birdbath" plural="birdbaths"/>
   <noun singular="adjective" plural="adjectives"/>
   <noun singular="tic" plural="tic"/>
@@ -917,7 +916,6 @@
   <noun singular="sorority" plural="sororities"/>
   <noun singular="spoonbill" plural="spoonbills"/>
   <noun singular="quart" plural="quarts"/>
-  <noun singular="hula hoop" plural="hula hoops"/>
   <noun singular="insect" plural="insects"/>
   <noun singular="dictator" plural="dictators"/>
   <noun singular="colonel" plural="colonels"/>
@@ -1342,7 +1340,6 @@
   <noun plural="power"/>
   <noun singular="wrestler" plural="wrestlers"/>
   <noun singular="flood" plural="floods"/>
-  <noun singular="can opener" plural="can openers"/>
   <noun singular="danger" plural="dangers"/>
   <noun singular="addict" plural="addicts"/>
   <noun singular="tragedy" plural="tragedies"/>
@@ -1360,7 +1357,6 @@
   <noun plural="fluff"/>
   <noun plural="cream"/>
   <noun singular="llama" plural="llamas"/>
-  <noun singular="dug out" plural="dug outs"/>
   <noun singular="hearer" plural="hearers"/>
   <noun singular="mistake" plural="mistakes"/>
   <noun singular="anomaly" plural="anomalies"/>
@@ -1658,7 +1654,6 @@
   <noun singular="topknot" plural="topknots"/>
   <noun singular="elder" plural="elders"/>
   <noun singular="spout" plural="spouts"/>
-  <noun singular="lump of coal" plural="coal"/>
   <noun singular="sadist" plural="sadists"/>
   <noun singular="sandbag" plural="sandbags"/>
   <noun singular="puppet" plural="puppets"/>
@@ -1721,7 +1716,6 @@
   <noun singular="notice" plural="notices"/>
   <noun singular="premier" plural="premiers"/>
   <noun singular="hubcap" plural="hubcaps"/>
-  <noun singular="super nova" plural="super novas"/>
   <noun singular="catacomb" plural="catacombs"/>
   <noun singular="whiner" plural="whiners"/>
   <noun singular="cypress" plural="cypresses"/>
@@ -1735,7 +1729,6 @@
   <noun singular="newscast" plural="newscasts"/>
   <noun singular="dendrite" plural="dendrites"/>
   <noun singular="row" plural="rows"/>
-  <noun singular="pair of tights" plural="tights"/>
   <noun singular="buyout" plural="buyouts"/>
   <noun singular="paver" plural="pavers"/>
   <noun singular="boudoir" plural="boudoirs"/>
@@ -2036,7 +2029,6 @@
   <noun singular="brother" plural="brothers"/>
   <noun singular="surface" plural="surfaces"/>
   <noun singular="anarchist" plural="anarchists"/>
-  <noun singular="pile of clothes" plural="clothes"/>
   <noun singular="cloth" plural="cloths"/>
   <noun singular="lad" plural="lads"/>
   <noun singular="airwave" plural="airwaves"/>
@@ -2193,7 +2185,6 @@
   <noun singular="hygienist" plural="hygienists"/>
   <noun singular="exploit" plural="exploits"/>
   <noun singular="park" plural="parks"/>
-  <noun singular="tarot card" plural="tarot cards"/>
   <noun singular="origin" plural="origins"/>
   <noun singular="distiller" plural="distillers"/>
   <noun singular="distillery" plural="distilleries"/>
@@ -2519,7 +2510,6 @@
   <noun singular="technique" plural="techniques"/>
   <noun singular="sighting" plural="sightings"/>
   <noun singular="sea" plural="seas"/>
-  <noun singular="vending machine" plural="vending machines"/>
   <noun singular="vistitor" plural="visitors"/>
   <noun singular="flat" plural="flats"/>
   <noun singular="gun" plural="guns"/>
@@ -2549,7 +2539,6 @@
   <noun singular="moon" plural="moons"/>
   <noun singular="yawl" plural="yawls"/>
   <noun singular="blot" plural="blots"/>
-  <noun singular="aloe vera" />
   <noun singular="hobnail" plural="hobnails"/>
   <noun singular="beholder" plural="beholders"/>
   <noun singular="seesaw" plural="seesaws"/>
@@ -2799,12 +2788,10 @@
   <noun singular="welt" plural="welts"/>
   <noun singular="device" plural="devices"/>
   <noun singular="laywoman" plural="laywomen"/>
-  <noun singular="hemp plant" plural="hemp"/>
   <noun singular="clamp" plural="clamps"/>
   <noun singular="slammer" plural="slammers"/>
   <noun singular="truism" plural="truisms"/>
   <noun singular="league" plural="leagues"/>
-  <noun singular="barrel of gunpowder" plural="gunpowder"/>
   <noun singular="drug" plural="drugs"/>
   <noun singular="undergrad" plural="undergrads"/>
   <noun singular="video" plural="videos"/>
@@ -2816,7 +2803,6 @@
   <noun singular="response" plural="responses"/>
   <noun singular="gavel" plural="gavels"/>
   <noun singular="snack" plural="snacks"/>
-  <noun singular="pair of nylons" plural="nylons"/>
   <noun singular="pageant" plural="pageants"/>
   <noun singular="classmate" plural="classmates"/>
   <noun singular="seer" plural="seers"/>
@@ -2984,7 +2970,6 @@
   <noun singular="frippery" plural="fripperies"/>
   <noun singular="reindeer" plural="reindeers"/>
   <noun singular="forgery" plural="forgeries"/>
-  <noun singular="tube of eyeliner" plural="eyeliner"/>
   <noun singular="naysayer" plural="naysayers"/>
   <noun singular="shrimp" plural="shrimps"/>
   <noun singular="mile" plural="miles"/>
@@ -3915,7 +3900,7 @@
  <properNoun value="Alphonse"/>
  <properNoun value="Alphonso"/>
  <properNoun value="Alpine"/>
- <properNoun value="thr Alps"/>
+ <properNoun value="the Alps"/>
  <properNoun value="Alsop"/>
  <properNoun value="Alston"/>
  <properNoun value="Althea"/>
@@ -5037,7 +5022,6 @@
  <properNoun value="the Doctor"/>
  <properNoun value="Dodgson"/>
  <properNoun value="Dodson"/>
- <properNoun value="John Doe"/>
  <properNoun value="Dolby"/>
  <properNoun value="Dollie"/>
  <properNoun value="Dolly"/>
@@ -6226,7 +6210,6 @@
  <properNoun value="Koch"/>
  <properNoun value="Kojak"/>
  <properNoun value="Kola"/>
- <properNoun value="King Kong"/>
  <properNoun value="Konrad"/>
  <properNoun value="Koontz"/>
  <properNoun value="Korea"/>
@@ -6352,12 +6335,11 @@
  <properNoun value="Letitia"/>
  <properNoun value="Letterman"/>
  <properNoun value="Levi"/>
- <properNoun value="thr Leviathan"/>
  <properNoun value="Lewinsky"/>
  <properNoun value="Lewis"/>
  <properNoun value="Lewisham"/>
  <properNoun value="Lexington"/>
- <properNoun value="thr Lexus"/>
+ <properNoun value="the Lexus"/>
  <properNoun value="Liam"/>
  <properNoun value="Libby"/>
  <properNoun value="Liberia"/>
@@ -6723,7 +6705,6 @@
  <properNoun value="Merton"/>
  <properNoun value="Mervin"/>
  <properNoun value="Merwyn"/>
- <properNoun value="Black Mesa"/>
  <properNoun value="the Messiah"/>
  <properNoun value="Metallica"/>
  <properNoun value="the Mexican"/>
@@ -7241,7 +7222,6 @@
  <properNoun value="Pompadour"/>
  <properNoun value="Pompeii"/>
  <properNoun value="the Pontiac"/>
- <properNoun value="Pooh Bear"/>
  <properNoun value="Poole"/>
  <properNoun value="Popeye"/>
  <properNoun value="Poppins"/>
@@ -7378,7 +7358,6 @@
  <properNoun value="the Rhine"/>
  <properNoun value="the Rhineland"/>
  <properNoun value="Rhoda"/>
- <properNoun value="Rhode Island"/>
  <properNoun value="Rhona"/>
  <properNoun value="Rhonda"/>
  <properNoun value="Ricardo"/>
@@ -7659,7 +7638,6 @@
  <properNoun value="Sergei"/>
  <properNoun value="Sergio"/>
  <properNoun value="Seth"/>
- <properNoun value="Dr Seuss"/>
  <properNoun value="Seville"/>
  <properNoun value="Seward"/>
  <properNoun value="Sexton"/>
@@ -8114,7 +8092,6 @@
  <properNoun value="Utopia"/>
  <properNoun value="the Uzbek"/>
  <properNoun value="the Uzi"/>
- <properNoun value="Darth Vader"/>
  <properNoun value="Valarie"/>
  <properNoun value="Valdez"/>
  <properNoun value="Valencia"/>
@@ -8130,7 +8107,7 @@
  <properNoun value="Vanessa"/>
  <properNoun value="Vanuatu"/>
  <properNoun value="Vasari"/>
- <properNoun value="th eVatican"/>
+ <properNoun value="the Vatican"/>
  <properNoun value="Vaughan"/>
  <properNoun value="Vega"/>
  <properNoun value="Vegemite"/>
@@ -8192,4 +8169,201 @@
  <properNoun value="Walcott"/>
  <properNoun value="Waldemar"/>
  <properNoun value="Walden"/>
+ <properNoun value="Waldheim"/>
+ <properNoun value="Waldo"/>
+ <properNoun value="Waldorf"/>
+ <properNoun value="Wales"/>
+ <properNoun value="Walker"/>
+ <properNoun value="Wallace"/>
+ <properNoun value="Wallis"/>
+ <properNoun value="Walls"/>
+ <properNoun value="Walmart"/>
+ <properNoun value="Walpole"/>
+ <properNoun value="Walt"/>
+ <properNoun value="Walter"/>
+ <properNoun value="Wanda"/>
+ <properNoun value="Wang"/>
+ <properNoun value="Wankel"/>
+ <properNoun value="Ward"/>
+ <properNoun value="Warhol"/>
+ <properNoun value="Warley"/>
+ <properNoun value="Warner"/>
+ <properNoun value="Warren"/>
+ <properNoun value="Warsaw"/>
+ <properNoun value="Warwick"/>
+ <properNoun value="Waterbury"/>
+ <properNoun value="Waterford"/>
+ <properNoun value="Watergate"/>
+ <properNoun value="Waterloo"/>
+ <properNoun value="Waters"/>
+ <properNoun value="Watkins"/>
+ <properNoun value="Watson"/>
+ <properNoun value="Watt"/>
+ <properNoun value="Watusi"/>
+ <properNoun value="Waugh"/>
+ <properNoun value="Waverley"/>
+ <properNoun value="Wayne"/>
+ <properNoun value="Weaver"/>
+ <properNoun value="Webb"/>
+ <properNoun value="Weber"/>
+ <properNoun value="Webster"/>
+ <properNoun value="Wedgwood"/>
+ <properNoun value="the Wehrmacht"/>
+ <properNoun value="Weinberg"/>
+ <properNoun value="Weizmann"/>
+ <properNoun value="Weldon"/>
+ <properNoun value="Welland"/>
+ <properNoun value="Weller"/>
+ <properNoun value="Welles"/>
+ <properNoun value="Wells"/>
+ <properNoun value="the Welshman"/>
+ <properNoun value="Wendell"/>
+ <properNoun value="Wendi"/>
+ <properNoun value="Wendy"/>
+ <properNoun value="Werner"/>
+ <properNoun value="Wesley"/>
+ <properNoun value="Wessex"/>
+ <properNoun value="Wesson"/>
+ <properNoun value="the Westerner"/>
+ <properNoun value="Wests"/>
+ <properNoun value="Weyden"/>
+ <properNoun value="Wharton"/>
+ <properNoun value="Wheatley"/>
+ <properNoun value="Wheeler"/>
+ <properNoun value="Whipple"/>
+ <properNoun value="Whistler"/>
+ <properNoun value="White"/>
+ <properNoun value="Whitehall"/>
+ <properNoun value="Whiteley"/>
+ <properNoun value="Whitfield"/>
+ <properNoun value="Whitley"/>
+ <properNoun value="Whitman"/>
+ <properNoun value="Whitney"/>
+ <properNoun value="Wiesel"/>
+ <properNoun value="Wiggins"/>
+ <properNoun value="Wigner"/>
+ <properNoun value="Wikipedia"/>
+ <properNoun value="Wilber"/>
+ <properNoun value="Wilbur"/>
+ <properNoun value="Wilburn"/>
+ <properNoun value="Wilcox"/>
+ <properNoun value="Wilda"/>
+ <properNoun value="Wilde"/>
+ <properNoun value="Wiles"/>
+ <properNoun value="Wiley"/>
+ <properNoun value="Wilford"/>
+ <properNoun value="Wilfred"/>
+ <properNoun value="Wilhelm"/>
+ <properNoun value="Wilkerson"/>
+ <properNoun value="Wilkes"/>
+ <properNoun value="Wilkins"/>
+ <properNoun value="Wilkinson"/>
+ <properNoun value="Will"/>
+ <properNoun value="Willard"/>
+ <properNoun value="William"/>
+ <properNoun value="Willie"/>
+ <properNoun value="Willis"/>
+ <properNoun value="Willy"/>
+ <properNoun value="Wilma"/>
+ <properNoun value="Wilmer"/>
+ <properNoun value="Wilson"/>
+ <properNoun value="Wilton"/>
+ <properNoun value="Wimbledon"/>
+ <properNoun value="Wimsey"/>
+ <properNoun value="Windsor"/>
+ <properNoun value="Windward"/>
+ <properNoun value="Winfield"/>
+ <properNoun value="Winfred"/>
+ <properNoun value="Winfrey"/>
+ <properNoun value="the Winnebago"/>
+ <properNoun value="Winnie"/>
+ <properNoun value="Winston"/>
+ <properNoun value="Winters"/>
+ <properNoun value="Winton"/>
+ <properNoun value="Wisconsin"/>
+ <properNoun value="Wolfe"/>
+ <properNoun value="Wolff"/>
+ <properNoun value="Wolfgang"/>
+ <properNoun value="Wollaston"/>
+ <properNoun value="Wolsey"/>
+ <properNoun value="Wong"/>
+ <properNoun value="Woodard"/>
+ <properNoun value="Woods"/>
+ <properNoun value="Woodstock"/>
+ <properNoun value="Woodward"/>
+ <properNoun value="Woolf"/>
+ <properNoun value="Woolworth"/>
+ <properNoun value="Wooten"/>
+ <properNoun value="Worcester"/>
+ <properNoun value="Wozniak"/>
+ <properNoun value="Wrangell"/>
+ <properNoun value="Wright"/>
+ <properNoun value="Wrigley"/>
+ <properNoun value="Wyat"/>
+ <properNoun value="Wyatt"/>
+ <properNoun value="Wycliffe"/>
+ <properNoun value="Wylie"/>
+ <properNoun value="Wyoming"/>
+ <properNoun value="Xanadu"/>
+ <properNoun value="Xavier"/>
+ <properNoun value="Xenia"/>
+ <properNoun value="Xerox"/>
+ <properNoun value="Xerxes"/>
+ <properNoun value="Yahweh"/>
+ <properNoun value="Yale"/>
+ <properNoun value="Yalta"/>
+ <properNoun value="Yalu"/>
+ <properNoun value="Yamagata"/>
+ <properNoun value="Yang"/>
+ <properNoun value="Yangtze"/>
+ <properNoun value="the Yankie"/>
+ <properNoun value="Yates"/>
+ <properNoun value="Yeager"/>
+ <properNoun value="Yeltsin"/>
+ <properNoun value="Yemen"/>
+ <properNoun value="the Yemeni"/>
+ <properNoun value="Yoda"/>
+ <properNoun value="Yokohama"/>
+ <properNoun value="Yolanda"/>
+ <properNoun value="New York"/>
+ <properNoun value="Yorkshire"/>
+ <properNoun value="Yorktown"/>
+ <properNoun value="Young"/>
+ <properNoun value="YouTube"/>
+ <properNoun value="Ypres"/>
+ <properNoun value="Yuan"/>
+ <properNoun value="the Yugoslav"/>
+ <properNoun value="Yuri"/>
+ <properNoun value="Yvette"/>
+ <properNoun value="Yvonne"/>
+ <properNoun value="Zachariah"/>
+ <properNoun value="Zachary"/>
+ <properNoun value="Zachery"/>
+ <properNoun value="Zagreb"/>
+ <properNoun value="Zaire"/>
+ <properNoun value="the Zairian"/>
+ <properNoun value="Zambezi"/>
+ <properNoun value="Zambia"/>
+ <properNoun value="the Zambian"/>
+ <properNoun value="Zamora"/>
+ <properNoun value="Zane"/>
+ <properNoun value="Zanzibar"/>
+ <properNoun value="Zappa"/>
+ <properNoun value="Zara"/>
+ <properNoun value="Zebedee"/>
+ <properNoun value="Zechariah"/>
+ <properNoun value="Zedekiah"/>
+ <properNoun value="Zelda"/>
+ <properNoun value="Zephaniah"/>
+ <properNoun value="Zeus"/>
+ <properNoun value="Zhengzhou"/>
+ <properNoun value="Zhukov"/>
+ <properNoun value="Ziggy"/>
+ <properNoun value="Zimbabwe"/>
+ <properNoun value="Zimmerman"/>
+ <properNoun value="Zoe"/>
+ <properNoun value="Zorn"/>
+ <properNoun value="Zorro"/>
+ <properNoun value="the Zulu"/>
+ <properNoun value="Zwingli"/>
 </nouns>

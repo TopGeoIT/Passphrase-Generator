@@ -3,7 +3,6 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="passphrase\MainActivity.cs">
     <Files>
       <File FileName="passphrase\MainActivity.cs" Line="32" Column="10" />
-      <File FileName="passphrase\Resources\dictionaries\Adverbs.xml" Line="1" Column="1" />
       <File FileName="passphrase\DictionaryLoader.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>

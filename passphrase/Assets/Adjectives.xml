@@ -131,7 +131,6 @@
   <adjective value="thirteenth"/>
   <adjective value="literate"/>
   <adjective value="elongated"/>
-  <adjective value="roomful of"/>
   <adjective value="brackish"/>
   <adjective value="mild"/>
   <adjective value="botanical"/>
@@ -434,7 +433,6 @@
   <adjective value="servile"/>
   <adjective value="printable"/>
   <adjective value="plump"/>
-  <adjective value="armful of"/>
   <adjective value="midweek"/>
   <adjective value="congruant"/>
   <adjective value="brash"/>
@@ -509,7 +507,6 @@
   <adjective value="spotty"/>
   <adjective value="argumentative"/>
   <adjective value="overcast"/>
-  <adjective value="cola flavoured"/>
   <adjective value="dashing"/>
   <adjective value="mucky"/>
   <adjective value="prior"/>
@@ -908,7 +905,6 @@
   <adjective value="alert"/>
   <adjective value="testate"/>
   <adjective value="intestate"/>
-  <adjective value="in vogue"/>
   <adjective value="stopgap"/>
   <adjective value="zigzag"/>
   <adjective value="clueless"/>
@@ -2037,6 +2033,10 @@
   <adjective value="gritty"/>
   <adjective value="bifocal"/>
   <adjective value="invisible"/>
+  <adjective value="ADJ2034"/>
+  <adjective value="ADJ2035"/>
+  <adjective value="ADJ2036"/>
+  <adjective value="ADJ2037"/>
   <adjective value="ADJ2038"/>
   <adjective value="ADJ2039"/>
   <adjective value="ADJ2040"/>

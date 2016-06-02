@@ -7,4 +7,6 @@
 	<string name="passwordTranslateOption">Zvoľ možnosť</string>
   <string name="translate">Prelož</string>
   <string name="loadingError">Pri načítaní slovníkov vznikla chyba</string>
+  <string name="generatingError">Pri generovaní vynikla chyba</string>
+  <string name="translaeError">Pri prekladaní vznikla chyba</string>
 </resources>

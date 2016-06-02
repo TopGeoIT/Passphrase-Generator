@@ -2,10 +2,16 @@
 using System.Runtime.CompilerServices;
 using Android.App;
 
+#if DEBUG
+[assembly: Application(Debuggable=true, Icon = "@drawable/PassphraseClean")]
+#else
+[assembly: Application(Debuggable = false, Icon = "@drawable/PassphraseClean")]
+#endif
+
 // Information about this assembly is defined by the following attributes.
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle ("passphrase")]
+[assembly: AssemblyTitle ("Passphrase")]
 [assembly: AssemblyDescription ("")]
 [assembly: AssemblyConfiguration ("")]
 [assembly: AssemblyCompany ("")]
@@ -13,6 +19,7 @@ using Android.App;
 [assembly: AssemblyCopyright ("Jarci")]
 [assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
+
 
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".
 // The form "{Major}.{Minor}.*" will automatically update the build and revision,
