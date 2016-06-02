@@ -7,10 +7,11 @@ using Android.Content;
 using System.IO;
 using System.Collections.Generic;
 using System;
+using Android.Content.PM;
 
 namespace passphrase
 {
-    [Activity(Label = "Passphrase", MainLauncher = true, Icon = "@drawable/PassphraseClean")]
+    [Activity(Label = "Passphrase", MainLauncher = true, Icon = "@drawable/PassphraseClean", ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : Activity
     {
         public PassphraseController controller;
@@ -18,7 +19,6 @@ namespace passphrase
         private TextView textOut;
         private EditText textIn;
         private Spinner spinner;
-        //private  dictionary;
         private int spinnerSelectedItemPosition;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -90,8 +90,7 @@ namespace passphrase
                         spinner = FindViewById<Spinner>(Resource.Id.translateSpinner);
 
                         spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
-                        var adapter = ArrayAdapter.CreateFromResource(
-                            this, Resource.Array.passwordTranslateOptions, Android.Resource.Layout.SimpleSpinnerItem);
+                        var adapter = ArrayAdapter.CreateFromResource(this, Resource.Array.passwordTranslateOptions, Android.Resource.Layout.SimpleSpinnerItem);
                         adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
 
                         spinner.Adapter = adapter;
@@ -108,7 +107,7 @@ namespace passphrase
                                 }
                                 else
                                 {
-                                    // from sntence
+                                    // from sentence
                                     textOut.Text = controller.generateBinaryFromSentence(textIn.Text);
                                 }
                             }
